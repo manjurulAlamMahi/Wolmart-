@@ -1,0 +1,22 @@
+@import './variables/variables';
+
+@import './base/common';
+
+@import './base/animation';
+@import './base/breadCrumb';
+@import './base/fixed_content';
+@import './base/popUp';
+@import './base/preLoader';
+
+@import './pages/index';
+@import './pages/shop';
+@import './pages/blog';
+@import './pages/pages';
+@import './pages/vendor';
+@import './pages/elements';
+@import './pages/compare';
+@import './pages/whishlist';
+@import './pages/shopColumn';
+@import './pages/shopList';
+@import './pages/shopNow';
+@import './pages/error';

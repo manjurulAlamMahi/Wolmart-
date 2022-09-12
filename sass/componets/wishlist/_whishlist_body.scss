@@ -1,0 +1,211 @@
+@import '../../mixins/mixins';
+/* ========== Whishlist Css Start ========== */
+#whishlist {
+    padding: 60px 0;
+
+    .whishlist_header {
+        padding-bottom: 20px;
+
+        h2 {
+            @include text(26px, 700, #333);
+            text-transform: capitalize;
+            line-height: 1.6;
+            letter-spacing: -0.015em;
+        }
+    }
+
+    .whishlist_body {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+
+            li:first-child,
+            li:last-child {
+                width: 30%;
+            }
+
+            li:nth-child(2),
+            li:nth-child(3) {
+                width: 20%;
+                text-align: center;
+            }
+
+            li:last-child {
+                text-align: center;
+            }
+
+        }
+
+        .whishlist_body_header {
+            li {
+                p {
+                    @include text(15px, 600, #333);
+                }
+            }
+
+            li:first-child {
+                p {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        .whishlist_body_item {
+            .whishlist_body_product {
+                display: flex;
+                flex-wrap: wrap;
+
+                .wbp_img {
+                    position: relative;
+                    width: 40%;
+
+                    .close_btn {
+                        position: absolute;
+                        top: -10px;
+                        right: -10px;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background: #fff;
+                        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+                        text-align: center;
+                        border: none;
+                        @include transition();
+
+                        i {
+                            font-size: 15px;
+                            color: #333;
+                            line-height: 24px;
+                        }
+
+                        &:hover {
+                            i {
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+
+                .wbp_name {
+                    width: 60%;
+                    text-align: center;
+
+                    a {
+                        @include text(15px, 500, #666);
+                        @include transition();
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+
+            .whishlist_body_price {
+                span {
+                    @include text(15px, 600, #333);
+                }
+            }
+
+            .whishlist_body_stock {
+                h6 {
+                    @include text(14px, 400, $hover);
+                }
+            }
+
+            .whishlist_body_action {
+                a:first-child {
+                    padding: 9px 25px;
+                    border: 1px solid #e1e1e1;
+                    @include text(13px, 600, #333);
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    @include transition();
+
+                    &:hover {
+                        background: #e1e1e1;
+                    }
+                }
+
+                a:last-child {
+                    padding: 9px 25px;
+                    @include text(13px, 600, #fff);
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    background: #333;
+                    @include transition();
+
+                    &:hover {
+                        background: rgba(51, 51, 51, 0.9);
+                    }
+                }
+            }
+        }
+
+        .whishlist_body_social {
+            padding-top: 20px;
+
+            h3 {
+                display: inline-block;
+                @include text(24px, 700, #333);
+                text-transform: uppercase;
+                line-height: 30px;
+                padding-right: 15px;
+            }
+
+            a {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                border: 1px solid #e1e1e1;
+                color: #666;
+                font-size: 16px;
+                text-align: center;
+                margin: 0 3px;
+                background: transparent;
+                @include transition();
+                &:hover{
+                    color: #fff;
+                }
+
+                &.s_facebook {
+                    &:hover {
+                        background-color: #1b4f9b;
+                        border-color: #1b4f9b;
+                    }
+                }
+                &.s_twitter {
+                    &:hover {
+                        background-color: #00adef;
+                        border-color: #00adef;
+                    }
+                }
+                &.s_pinterest {
+                    &:hover {
+                        background-color: #f96a02;
+                        border-color: #f96a02;
+                    }
+                }
+                &.s_envelope {
+                    &:hover {
+                        background-color: #dd4b39;
+                        border-color: #dd4b39;
+                    }
+                }
+                &.s_whatsapp {
+                    &:hover {
+                        background-color: #3c8a38;
+                        border-color: #3c8a38;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ========== Whishlist Css End ========== */

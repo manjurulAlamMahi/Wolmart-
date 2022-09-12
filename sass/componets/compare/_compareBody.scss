@@ -1,0 +1,161 @@
+@import '../../mixins/mixins';
+/* ========================== Comapre Css Start ============================ */
+#compare{
+    padding: 40px 0;
+    .compare_title{
+        text-align: end;
+        padding-right: 30px;
+        h2{
+            @include text(16px,400,#999);
+        }
+    }
+    .compare_product{
+        padding: 20px 0;
+        .close_product{
+            font-size: 20px;
+            color: #333;
+            @include transition();
+            &:hover{
+                color: $hover;
+            }
+        }
+        .product_img{
+            position: relative;
+            margin: 5px 0;
+            &:hover{
+                .ovrly{
+                    opacity: 1;
+                }
+            }
+            .ovrly{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                opacity: 0;
+                @include transition();
+                ul{
+                    li{
+                        a{
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            line-height: 30px;
+                            font-size: 15px;
+                            color: #999;
+                            background: #fff;
+                            border-radius: 50%;
+                            @include transition();
+                            margin-bottom: 5px;
+                            &:hover{
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        a{
+            @include text(11px,600,#333);
+            text-transform: uppercase;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+    .compare_price{
+        padding: 20px 0;
+        background: #fbfbfb;
+        span{
+            @include text(16px,400,$hover); 
+        }
+        del{
+            @include text(14px,400,#999);
+        }
+    }
+    .compare_availability{
+        padding: 20px 0;
+        p{
+            @include text(16px,400,$offer);
+        }
+    }
+    .comapre_description{
+        padding: 20px 0;
+        background: #fbfbfb;
+        ul{
+            li{
+                @include text(14px,400,#666);
+                padding-bottom: 5px;
+                i{
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    .compare_category,
+    .compare_SKU,
+    .compare_size,
+    .compare_brand{
+        padding: 20px 0;
+        p{
+            @include text(13px,400,#333);
+        }
+    }
+    .compare_brand,
+    .compare_category{
+        background: #fbfbfb;
+    }
+    .compare_color{
+        padding: 20px 0;
+        background: #fbfbfb;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin-right: 4px;
+                &.c_red{
+                    background: #ff0000;
+                }
+                &.c_green{
+                    background: #00ff00;
+                }
+                &.c_blue{
+                    background: #0000ff;
+                }
+                &.c_yellow{
+                    background: #ECEC23;
+                }
+                &.c_black{
+                    background: #000;
+                }
+                &.c_ash{
+                    background: #C0C0C0;
+                }
+                &.c_gray{
+                    background: #808080;
+                }
+                &.c_sky{
+                    background: #0080C0;
+                }
+                &.c_water{
+                    background: #95E8E8;
+                }
+                &.c_pink{
+                    background: #FA0AF3;
+                }
+                &.c_cyan{
+                    background: #42FDF9;
+                }
+                &.c_silver{
+                    background: #9BA3A4;
+                }
+            }
+        }
+    }
+    .comapare_ratings_reviews{
+        padding: 20px 0;
+    }
+}
+/* ========================== Comapre Css End ============================ */
